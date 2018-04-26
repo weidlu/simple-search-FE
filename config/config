@@ -1,0 +1,5 @@
+var host = '10.149.250.240';
+var port = '8080';
+module.exports = {
+    search: `http://${host}:${port}/kwsearch/demo/search`,
+};

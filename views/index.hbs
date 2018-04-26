@@ -1,0 +1,49 @@
+ <br><br><br><br>
+{{#if res}}
+        <div style="margin-top:30px">
+            <div class="row">
+                <!--<div class="col-sm-2">
+                    <div class="col-lg-20 col-lg-offset-2">
+                        &lt;!&ndash;<div class="col-lg-20 col-lg-offset-2">关键词推荐:</div>
+                        <ul>
+                            <li><a href=AAA>$word</a></li>
+                        </ul>&ndash;&gt;
+                    </div>
+                </div>-->
+                <div class="col-lg-9 col-sm-offset-2">
+                    {{#each res.results}}
+                        <div class="col-lg-11 col-lg-offset-0">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <!--title-->
+                                    <a href={{this.url}} target="blank">{{{this.title}}}</a>{{this.tstamp}}
+                                </div>
+                                <div class="panel-body">
+                                    <!--content-->
+                                    {{{this.content}}} ...
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+
+            </div>
+        </div>
+    </div>
+{{else}}
+    {{#if searchInput}}
+        <div class="col-lg-9 col-lg-offset-2">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    未检索到相关新闻
+                </div>
+            </div>
+        </div>
+    {{else}}
+        <div class="col-lg-9 col-lg-offset-2">
+            <!--blank-->
+        </div>
+    {{/if}}
+{{/if}}

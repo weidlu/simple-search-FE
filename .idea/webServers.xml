@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0877b05d-7f6d-424a-8017-3ecb2cd582c4" name="weidlu" url="http://10.64.206.7">
+        <fileTransfer host="10.64.206.7" port="22" rootFolder="/home/weidlu" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
