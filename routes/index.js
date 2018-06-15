@@ -1,10 +1,10 @@
-var express = require('express');
-var router = express.Router();
-var out = require('../public/javascripts/outbound');
+let express = require('express');
+let router = express.Router();
+let out = require('../public/javascripts/outbound');
 /* GET home page. */
 router.get('/', function (req, res, next) {
     console.log(req.query);
-    var searchInfo = new Object();
+    let searchInfo = new Object();
     const SIZE = 5;
     searchInfo.keywords = req.query.searchword;
     searchInfo.size = SIZE;
@@ -34,5 +34,10 @@ router.get('/', function (req, res, next) {
         res.render('index', renderInfo)
     });
 });
+
+/*router.get('/react', function (req, res, next) {
+    console.log(req);
+    res.sendFile('');
+});*/
 
 module.exports = router;

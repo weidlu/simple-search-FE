@@ -1,4 +1,4 @@
-var request = require('request'),
+let request = require('request'),
     config = require('../../config/config');
 
 let myUrl = config.search;
